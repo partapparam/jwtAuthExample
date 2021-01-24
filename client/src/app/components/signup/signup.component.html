@@ -1,1 +1,24 @@
-<p>signup works!</p>
+<form [formGroup]="signupForm">
+  <fieldset>
+    <legend>Login</legend>
+    <div class="form-field">
+      <label for="email">Email:</label>
+      <input type="text" name="email" id="email" formControlName="email">
+    </div>
+    <div class="form-field">
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" formControlName="password">
+    </div>
+    <div class="form-field">
+      <label for="firstName">First Name:</label>
+      <input type="text" name="firstName" id="firstName" formControlName="firstName">
+    </div>
+    <div class="form-field">
+    <label for="lastName">Last Name:</label>
+    <input type="text" name="lastName" id="lastName" formControlName="lastName">
+  </div>
+  </fieldset>
+  <div class="form-buttons">
+    <button class="button button-primary" (click)="signup()">Signup</button>
+  </div>
+</form>

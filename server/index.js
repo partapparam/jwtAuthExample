@@ -10,8 +10,8 @@ const db = require('./db/db');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const validate = async (email) => {
-    return await db.findUser(email);
+const validate = (email) => {
+    return db.findUser(email);
 };
 
 const createToken = user => {
@@ -52,7 +52,7 @@ app.post('/api/signup', (req, res) => {
 });
 app.post('/api/login', (req, res) => {
     const { email, password } = req.body;
-    db.findUser(email)
+    validate(email)
         .then(user => {
             if (!user) return res.json({message: 'error', data: 'Incorrect login'});
             bcrypt.compare(password, user.hash)

@@ -19,11 +19,10 @@ export class ErrorInterceptor implements HttpInterceptor {
       .pipe(
         catchError(err => {
           if (err.status === 401) {
-          //  unauthorized access
             this.authService.logout();
             location.reload(true);
           }
-          const error = err.error.message || err.statustext;
+          const error = err.error.message || err.statusText;
           return throwError(error);
         })
       )

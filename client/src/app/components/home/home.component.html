@@ -1,1 +1,8 @@
-<p>home works!</p>
+<nav>
+  <a routerLink="">JWT-AUTH Example</a>
+  <a routerLink="login" *ngIf="!(isLoggedIn$ | async)">Login</a>
+  <a routerLink="signup" *ngIf="!(isLoggedIn$ | async)">Signup</a>
+  <a routerLink="admin" *ngIf="(isLoggedIn$ | async)">Admin</a>
+  <a routerLink="home" (click)="logout()" *ngIf="(isLoggedIn$ | async)"></a>
+</nav>
+<router-outlet></router-outlet>

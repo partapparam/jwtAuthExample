@@ -19,10 +19,11 @@ export class TokenInterceptor implements HttpInterceptor {
         setHeaders: {
           Authorization: `Bearer ${token}`
         }
-      });
+      })
 
       return next.handle(request);
     }
     return next.handle(request);
+
   }
 }

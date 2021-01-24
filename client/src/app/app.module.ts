@@ -10,6 +10,7 @@ import { AdminComponent } from './components/admin/admin.component';
 import {HttpClientModule} from "@angular/common/http";
 import {CommonModule} from "@angular/common";
 import {HttpInterceptorsProviders} from "./interceptors";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {HttpInterceptorsProviders} from "./interceptors";
     BrowserModule,
     HttpClientModule,
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [
       HttpInterceptorsProviders
