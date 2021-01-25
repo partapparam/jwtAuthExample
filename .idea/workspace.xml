@@ -6,17 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="40e57f47-d181-45aa-b7b3-4140b3f26a43" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/admin/admin.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/admin/admin.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/admin/admin.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/admin/admin.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/admin/admin.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/admin/admin.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/home/home.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/components/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/login/login.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/login/login.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/components/signup/signup.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/signup/signup.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/components/signup/signup.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/signup/signup.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/interceptors/error.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/interceptors/error.interceptor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/interceptors/token.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/interceptors/token.interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/db/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/db/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/lib/authMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/lib/authMiddleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +56,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="15.2.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.22" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -64,7 +77,9 @@
       <updated>1611260927388</updated>
       <workItem from="1611260935057" duration="4811000" />
       <workItem from="1611421514545" duration="1457000" />
-      <workItem from="1611507436243" duration="1926000" />
+      <workItem from="1611507436243" duration="2157000" />
+      <workItem from="1611524501158" duration="9173000" />
+      <workItem from="1611591538312" duration="5411000" />
     </task>
     <servers />
   </component>

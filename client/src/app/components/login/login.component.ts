@@ -30,12 +30,12 @@ export class LoginComponent implements OnInit {
     const values = this.form.value;
     this.authService.login(values.email, values.password)
       .subscribe(res => {
-        res = res.data;
+        console.log(res);
         if (res.message === 'success') {
-          this.authService.setSession(res.data);
+          this.authService.setSession(res);
           this.router.navigateByUrl('/admin');
         }
-        alert(res.data);
+        console.log(res);
         return this.form.reset();
       })
   }

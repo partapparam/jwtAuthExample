@@ -31,13 +31,13 @@ export class SignupComponent implements OnInit {
     const values = this.signupForm.value;
     this.authService.signup(values)
       .subscribe(res => {
-        res = res.data;
+        console.log(res);
         if (res.message === 'success') {
-          this.authService.setSession(res.data);
-          this.router.navigateByUrl('/admin');
+          this.authService.setSession(res);
+          return this.router.navigateByUrl('/admin');
         }
         // if request failed
-        alert(res.data);
+        console.log(res.data);
         return this.signupForm.reset();
       })
   }

@@ -17,5 +17,10 @@ module.exports = {
     newUser: async (data) => {
         return new User(data).save();
     },
-    findUser: async (email) => User.findOne({email})
+    findUser: async (email) => User.findOne({email}),
+    deleteUsers: async (idArray) => User.deleteMany({
+        _id: {
+            $in: idArray
+        }
+    })
 }

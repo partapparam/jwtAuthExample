@@ -11,6 +11,11 @@ import {HttpClientModule} from "@angular/common/http";
 import {CommonModule} from "@angular/common";
 import {HttpInterceptorsProviders} from "./interceptors";
 import {ReactiveFormsModule} from "@angular/forms";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTableModule } from "@angular/material/table";
+import {MatButtonModule} from "@angular/material/button";
+import {MatCheckboxModule} from "@angular/material/checkbox";
+
 
 @NgModule({
   declarations: [
@@ -24,8 +29,12 @@ import {ReactiveFormsModule} from "@angular/forms";
     BrowserModule,
     HttpClientModule,
     CommonModule,
-    AppRoutingModule,
-    ReactiveFormsModule
+    MatTableModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [
       HttpInterceptorsProviders

@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import { Observable, BehaviorSubject } from "rxjs";
 import {HttpClient} from "@angular/common/http";
 import * as moment from 'moment';
-import {shareReplay} from "rxjs/operators";
+import {map, shareReplay, tap} from "rxjs/operators";
+import {Router} from "@angular/router";
 
 const APIURL = 'http://localhost:3000/api';
 
@@ -13,7 +14,8 @@ export class AuthService {
   isLoginSubject$ = new BehaviorSubject<boolean>(this.getToken());
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private router: Router
   ) { }
 
   private getToken(): boolean {
@@ -62,6 +64,40 @@ export class AuthService {
       .pipe(
         shareReplay()
       )
+  }
+
+  public getUsers(): Observable<any> {
+    return this.http.get<any>(APIURL + '/users')
+      .pipe(
+        shareReplay(),
+        map(res => {
+          if (res.message === 'success') {
+            return res.data;
+          }
+          // if error message
+          return res;
+        })
+      );
+  }
+
+  public admin(): Observable<any> {
+    return this.http.get<any>(APIURL + '/admin');
+  }
+
+  public deleteUsers(data): void {
+    let url = '';
+    // build query string from id's to be deleted
+    data.forEach(id => {
+      url += `id=${id._id}&`;
+    })
+    this.http.delete(APIURL + '/delete?' + url)
+      .subscribe(response => {
+        console.log(response);
+        if (response.message === 'error') {
+          alert(response.data);
+          return location.reload(true);
+        }
+      });
   }
 
 
