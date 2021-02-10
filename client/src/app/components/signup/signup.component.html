@@ -1,24 +1,23 @@
-<form [formGroup]="signupForm">
-  <fieldset>
-    <legend>Signup</legend>
-    <div class="form-field">
-      <label for="email">Email:</label>
-      <input type="text" name="email" id="email" formControlName="email">
-    </div>
-    <div class="form-field">
-      <label for="password">Password</label>
-      <input type="password" name="password" id="password" formControlName="password">
-    </div>
-    <div class="form-field">
-      <label for="firstName">First Name:</label>
-      <input type="text" name="firstName" id="firstName" formControlName="firstName">
-    </div>
-    <div class="form-field">
-    <label for="lastName">Last Name:</label>
-    <input type="text" name="lastName" id="lastName" formControlName="lastName">
-  </div>
-  </fieldset>
+<form [formGroup]="signupForm" class="form">
+  <h1>Signup</h1>
+  <mat-form-field appearance="fill" class="form-element">
+    <mat-label>Email</mat-label>
+    <input type="email" matInput name="email" formControlName="email">
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="form-element">
+    <mat-label>First Name</mat-label>
+    <input matInput type="text" name="firstName" id="firstName" formControlName="firstName">
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="form-element">
+    <mat-label>Last Name</mat-label>
+    <input matInput type="text" name="lastName" formControlName="lastName">
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="form-element">
+    <mat-label>Password</mat-label>
+    <input type="password" matInput name="password" formControlName="password">
+  </mat-form-field>
   <div class="form-buttons">
-    <button class="button button-primary" (click)="signup()">Signup</button>
+    <button mat-raised-button class="button" color="primary" (click)="signup()">Signup</button>
   </div>
 </form>
+

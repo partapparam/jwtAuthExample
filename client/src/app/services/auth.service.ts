@@ -93,10 +93,10 @@ export class AuthService {
     this.http.delete(APIURL + '/delete?' + url)
       .subscribe(response => {
         console.log(response);
-        if (response.message === 'error') {
-          alert(response.data);
-          return location.reload(true);
-        }
+        // if (response.message === 'error') {
+        //   alert(response.data);
+        //   return location.reload(true);
+        // }
       });
   }
 

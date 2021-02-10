@@ -15,6 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from "@angular/material/table";
 import {MatButtonModule} from "@angular/material/button";
 import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
 
 
 @NgModule({
@@ -29,12 +31,14 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
     BrowserModule,
     HttpClientModule,
     CommonModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
     MatTableModule,
     MatButtonModule,
+    MatFormFieldModule,
     MatCheckboxModule,
-    BrowserAnimationsModule,
-    ReactiveFormsModule,
-    AppRoutingModule
+    MatInputModule,
+    BrowserAnimationsModule
   ],
   providers: [
       HttpInterceptorsProviders
